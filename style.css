@@ -37,6 +37,11 @@ body {
 }
 
 a { color: inherit; text-decoration: none; }
+
+.icon { display: inline-flex; align-items: center; vertical-align: -3px; }
+.icon svg { display: block; }
+.fact .icon, .contact-link .icon { color: var(--accent); vertical-align: -2px; }
+
 ::selection { background: var(--accent-soft); color: var(--accent); }
 .mono { font-family: var(--font-mono); }
 .accent { color: var(--accent); }

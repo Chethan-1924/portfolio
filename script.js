@@ -65,7 +65,7 @@ const EDUCATION = [
 
 const CERTIFICATION = {
   title: 'Python Full Stack Development',
-  org: 'Pentagon Space, Banglore',
+  org: 'Pentagon Space',
 };
 
 // ---------- Terminal typing ----------
@@ -141,7 +141,7 @@ function renderProjects() {
     <div class="card project-card">
       <div class="project-file">
         <span>${p.file}</span>
-        <a href="${p.link}" target="_blank" rel="noreferrer">⌥ repo</a>
+        <a href="${p.link}" target="_blank" rel="noreferrer">${ICONS.externalLink} repo</a>
       </div>
       <div class="project-body">
         <h3>${p.title}</h3>
@@ -178,7 +178,7 @@ function renderEducation() {
   `).join('');
   const certCard = `
     <div class="card edu-card">
-      <div class="cert-label mono">🏅 CERTIFICATION</div>
+      <div class="cert-label mono">${ICONS.award} CERTIFICATION</div>
       <h3>${CERTIFICATION.title}</h3>
       <p class="org">${CERTIFICATION.org}</p>
     </div>
@@ -195,15 +195,26 @@ function setupNav() {
 
   const toggle = document.getElementById('nav-toggle');
   const panel = document.getElementById('nav-mobile-panel');
+  toggle.innerHTML = ICONS.menu;
   toggle.addEventListener('click', () => {
     const open = panel.classList.toggle('open');
-    toggle.textContent = open ? '×' : '≡';
+    toggle.innerHTML = open ? ICONS.close : ICONS.menu;
   });
   panel.querySelectorAll('a').forEach((a) => {
     a.addEventListener('click', () => {
       panel.classList.remove('open');
-      toggle.textContent = '≡';
+      toggle.innerHTML = ICONS.menu;
     });
+  });
+}
+
+// Fill every <span class="icon icon-NAME"> placeholder with its SVG
+function injectIcons() {
+  document.querySelectorAll('[class*="icon-"]').forEach((el) => {
+    const match = [...el.classList].find((c) => c.startsWith('icon-'));
+    if (!match) return;
+    const name = match.replace('icon-', '');
+    if (ICONS[name]) el.innerHTML = ICONS[name];
   });
 }
 
@@ -228,6 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderProjects();
   renderExperience();
   renderEducation();
+  injectIcons();
   setupNav();
   setupReveal();
   typeTerminal(document.getElementById('terminal-output'), BOOT_LINES);
