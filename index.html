@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D Chethan Kumar — Software Developer</title>
+  <meta name="description" content="D Chethan Kumar — Full-Stack & Python Developer portfolio. Flask, MySQL, REST APIs, and security-minded engineering." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav id="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="mono nav-brand">chethan<span class="accent">@</span>portfolio<span class="dim">:~$</span></a>
+      <div class="mono nav-links" id="nav-links-desktop">
+        <a href="#profile">./profile</a>
+        <a href="#skills">./skills</a>
+        <a href="#projects">./projects</a>
+        <a href="#experience">./experience</a>
+        <a href="#education">./education</a>
+        <a href="#contact">./contact</a>
+      </div>
+      <button class="mono nav-toggle" id="nav-toggle" aria-label="Toggle navigation">≡</button>
+    </div>
+    <div class="container mono nav-mobile-panel" id="nav-mobile-panel">
+      <a href="#profile">./profile</a>
+      <a href="#skills">./skills</a>
+      <a href="#projects">./projects</a>
+      <a href="#experience">./experience</a>
+      <a href="#education">./education</a>
+      <a href="#contact">./contact</a>
+    </div>
+  </nav>
+
+  <header id="top">
+    <div class="container hero-grid">
+      <div>
+        <div class="card mono terminal-box" id="terminal-box">
+          <div class="dots"><span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span></div>
+          <div id="terminal-output"></div>
+        </div>
+
+        <div class="hero-copy">
+          <h1>D Chethan Kumar</h1>
+          <p class="lead">
+            Python &amp; Full-Stack Developer, fresh out of a CS engineering degree — I build web
+            apps end to end and think about how they break before someone else finds out.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">✉ Get in touch</a>
+            <a href="assets/D_Chethan_Kumar_Resume.pdf" download class="btn">⬇ Download resume</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-avatar">
+        <img src="assets/profile.png" alt="D Chethan Kumar" />
+      </div>
+    </div>
+
+    <div class="scroll-hint"><span class="bounce">↓</span></div>
+  </header>
+
+  <section id="profile" class="section reveal">
+    <div class="container">
+      <p class="section-tag">./profile.sh --summary</p>
+      <h2 class="section-title">Profile</h2>
+      <div class="card profile-card">
+        <p>
+          Computer Science Engineering graduate with hands-on experience in
+          <b>Python, Flask, and MySQL</b>, building full-stack web applications end to end —
+          from normalized database schemas to responsive front-ends. Comfortable designing
+          RESTful APIs and CRUD workflows, and shipped a working POS-style billing system as a
+          capstone project. Alongside development work, I completed an ethical hacking
+          internship and a hands-on social engineering research project, so I build with an
+          instinct for how systems get attacked, not just how they're supposed to work.
+          Currently looking for an entry-level <b>Python / Full-Stack Developer</b> role.
+        </p>
+        <div class="fact-row">
+          <span class="fact mono">📍 Bengaluru, Karnataka</span>
+          <span class="fact mono">🎓 B.Tech CSE, 2021–2025</span>
+          <span class="fact mono">🛡 Ethical Hacking Intern, L&amp;T EduTech</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section reveal">
+    <div class="container">
+      <p class="section-tag">./scan.sh --target=self</p>
+      <h2 class="section-title">Skills</h2>
+      <div class="grid-cards" id="skills-grid"></div>
+    </div>
+  </section>
+
+  <section id="projects" class="section reveal">
+    <div class="container">
+      <p class="section-tag">./projects.sh --list</p>
+      <h2 class="section-title">Projects</h2>
+      <div class="stack-cards" id="projects-list"></div>
+    </div>
+  </section>
+
+  <section id="experience" class="section reveal">
+    <div class="container">
+      <p class="section-tag">./history.sh --tail</p>
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <section id="education" class="section reveal">
+    <div class="container">
+      <p class="section-tag">./education.sh --list</p>
+      <h2 class="section-title">Education &amp; Certifications</h2>
+      <div class="grid-cards" id="education-grid"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section reveal" style="border-bottom:none;">
+    <div class="container">
+      <p class="section-tag">./connect.sh --open</p>
+      <h2 class="section-title">Let's work together</h2>
+      <div class="card contact-card">
+        <p class="contact-lead">
+          Actively looking for an entry-level Software / Python / Full-Stack Developer role.
+          Based in Bengaluru, open to relocation. Reach out directly — I usually reply within a day.
+        </p>
+        <div class="contact-links">
+          <a class="mono contact-link" href="mailto:dchethankumar24@gmail.com">✉ dchethankumar24@gmail.com</a>
+          <a class="mono contact-link" href="tel:+918790678555">☎ +91 87906 78555</a>
+          <a class="mono contact-link" href="https://linkedin.com/in/d-chethan" target="_blank" rel="noreferrer">in linkedin.com/in/d-chethan</a>
+          <a class="mono contact-link" href="https://github.com/Chethan-1924" target="_blank" rel="noreferrer">⌥ github.com/Chethan-1924</a>
+        </div>
+        <a href="assets/D_Chethan_Kumar_Resume.pdf" download class="btn btn-primary">⬇ Download full resume (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="mono">© <span id="year"></span> D Chethan Kumar — built with HTML, CSS &amp; JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
