@@ -4,7 +4,7 @@ Personal portfolio site. Built with plain HTML, CSS, and JavaScript — terminal
 and security-report themed to reflect a Python + full-stack background with an
 ethical hacking internship. No frameworks, no build step.
 
-**Live site:** _add your GitHub Pages link here after deploying_
+**Live site:** https://chethan-1924.github.io/portfolio/
 
 ## Tech stack
 
