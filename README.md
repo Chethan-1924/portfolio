@@ -51,27 +51,6 @@ npx serve .
 
 Then visit `http://localhost:5500` (or whatever port it prints).
 
-## Editing content
-
-Skills, Projects, Experience, and Education are defined as plain arrays near
-the top of `script.js` (`SKILLS`, `PROJECTS`, `EXPERIENCE`, `EDUCATION`). Edit
-those arrays to update the content — the rendering code below builds the HTML
-automatically. The Hero text and Contact details are static in `index.html`.
-
-## Deploying to GitHub Pages
-
-Since there's no build step, this is simpler than a React/Vite deploy:
-
-1. Push this project to a GitHub repository.
-2. In the repo's **Settings → Pages**, set:
-   - Source: **Deploy from a branch**
-   - Branch: **main**, folder **/ (root)**
-3. Save. GitHub Pages will publish directly from your `main` branch — no
-   `gh-pages` branch or deploy command needed.
-4. Site goes live at `https://<username>.github.io/<repo-name>/`.
-
-Any time you push a change to `main`, the live site updates automatically
-within a minute or two.
 
 ## License
 
