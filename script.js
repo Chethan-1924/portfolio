@@ -4,6 +4,7 @@ const SKILLS = [
   { label: 'Frameworks / APIs', level: 'PROFICIENT', items: ['Flask', 'REST API Design'] },
   { label: 'Front-End', level: 'WORKING', items: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design'] },
   { label: 'Databases', level: 'PROFICIENT', items: ['MySQL', 'Schema Design', 'CRUD Operations'] },
+  { label: 'Machine Learning', level: 'WORKING', items: ['pandas', 'scikit-learn', 'Regression Models (Linear Regression,','Random Forest)']},
   { label: 'Tools & Platforms', level: 'WORKING', items: ['Git', 'GitHub', 'VS Code', 'Postman'] },
   { label: 'Security', level: 'FAMILIAR', items: ['Kali Linux', 'Wireshark', 'Metasploit', 'SET Toolkit'] },
 ];
@@ -21,7 +22,18 @@ const PROJECTS = [
       'Architected a normalized MySQL schema for transactions and order history, improving query performance.',
       'Built a responsive front-end that streamlined store workflow end to end.',
     ],
-    link: 'https://github.com/Chethan-1924',
+    link: 'https://github.com/Chethan-1924/grocery-store.git',
+  },
+  {
+    file: 'report/car price-prediction.log',
+    title: 'Car Price Prediction',
+    subtitle: 'Machine Learning Web Application',
+    stack: ['Python, Flask, scikit-learn, pandas, HTML5, CSS3, JavaScript'],
+    points: [
+      'Built and deployed a Flask REST API serving a trained Random Forest regression model (R2 = 0.94) that predicts used-car resale prices from 15,000+ listings.',
+      'Owned the end-to-end engineering pipeline — data preprocessing, model integration, and API design — with input validation to handle unseen categories safely.',
+      ' Built a responsive front-end with dynamic, data-driven dropdowns for real-time price estimation based on brand, model, mileage,and engine specs.',
+    ],
   },
   {
     file: 'report/social-engineering.log',
